@@ -1,0 +1,124 @@
+// Unit Call
+var codeTXT = new Array();
+codeTXT['adult'] 	= '{[roomAdult]} adult';
+codeTXT['adults'] 	= '{[roomAdult]} adults';
+codeTXT['child'] 	= '{[roomChild]} child';
+codeTXT['children'] = '{[roomChild]} children';
+codeTXT['room']		= 'Room';
+
+// Guest Name Check
+var firstname_default 	= "Firstname";
+var lastname_default 	= "Lastname";
+
+// Airport Transfer Check
+var transfer_alert="Please note that the transfer rate is not included in the room rate unless specified in the package details.";
+var transfer_awd_alert="Airport transfer charges will be added to your room accommodations when making your payment.";
+var arrival_time_alert="Arrival time is required.";
+var arrival_vehicle_alert="Please select your airport transfer vehicle preference.";
+var departure_vehicle_alert="Please select your departure transfer vehicle preference.";
+var transfer_max_child_age_alert="Children over {maxChildAge} will be charged at full price";
+var PickupPoint_alert="Please select your arrival point.";
+var DeparturePoint_alert="Please select your departure point.";
+var transferselecttrip="Sorry - please select trip before submit form.";
+
+// Room Config Check
+var max_adult_alert="The number of people exceeds the maximum people allowed in this room type.";
+var children_age_alert="Please enter all children&#039;s ages seperated by a comma.";
+var child_age_alert="Please enter your child&#039;s age.";
+var children_ages_check_alert="The amount of children and the number of ages entered do not match up.";
+var extrabed_alert="The hotel only permits 1 extra bed per room. Please contact the hotel for arrangements.";
+var extrabed_check_alert="We notice you have requested an extrabed but have not selected number of children or added an extra adult. Is this correct?";
+var extrabed_required_alert="Extra bed is required for the number of guests you have selected.";
+
+// Booking Details Check
+var contact_alert="Contact name is required.";
+var email_alert="Email is required.";
+var email_incorrect_alert="E-mail Address is incorrect, or has an invalid format. Please correct and re-submit.";
+var mobile_alert="Mobile phone is required.";
+var mobile_length_alert="Mobile phone must contain at least 6 digits.";
+var nationality_alert="Please select nationality.";
+var agree_alert="Please read and agree to our terms and conditions as stated on this website before proceeding.";
+
+// Card Details Check
+var cardname_alert="Your name as appears on card is required.";
+var expired_alert="The credit card given appears to be expired.";
+var secure_code_alert="The security code is required.";
+var cardnumber_alert="The credit card number is required.";
+var card_invalid_alert="The card number does not appear to be valid. Please verify.";
+var person_paying_alert="The full name of the person paying for this reservation is required.";
+var bank_alert="Issuing Bank is required.";
+var service_phone_alert="Bank service phone number is required.";
+var address_alert="Street address is required.";
+var city_alert="City is required.";
+var province_alert="Province is required.";
+var postcode_alert="Postal code is required.";
+var country_alert="Billing country is required.";
+var country_residence_alert="Country of residence is required.";
+var valid_chars_alert="Please enter English characters only. The following characters are allowed: A-Z a-z 0-9 ? . , - + _ :";
+
+// Availability Chart Check
+var select_date_alert="Please select the date which you would like to reserve a room.";
+var day_use_alert="This offer is for day use only. Only 1 day can be booked."
+var gap_alert="We are sorry but there is a gap in between the period of your stay. Please split your request into 2 bookings to proceed.";
+
+// General
+var bookmark="Please press ctrl-D - thank you!";
+
+var current_bestselling = "Current Bestselling";
+var str_all = "All";
+var loading_txt = "loading...";
+
+var db_timeout = "Oops..there is a problem connecting to the server. Please try again in a few minutes";
+
+// Bundle
+var bundle_ToPayNow = "To Pay Now ({displaytext})";
+var bundle_Hotel = "Hotel";
+var bundle_HotelDeposit = "Hotel deposit";
+var bundle_Transfer = "Transfer";
+var bundle_Tour = "Tour";
+
+var index_alert = new Array();
+
+index_alert[0]="Please select a date which you would like to book a room.";
+index_alert[1]="This offer is for day use only. Only 1 day can be booked at a time.";
+index_alert[2]="This offer requires a minimum stay of {minstay} nights.";
+index_alert[3]="We are sorry but as there is a gap in between the period of your stay. Please split your request into 2 bookings to proceed on.";
+index_alert[4]="We are sorry but the hotel does not allow check ins on the day you have selected.";
+index_alert[5]="We are sorry but the hotel does not allow check outs on the day you have selected.";
+index_alert[6]="At least one of the nights selected has a minimum night stay of {nights} nights.";
+index_alert[7]="At least one of the nights selected has a maximum night stay of {nights} nights.";
+index_alert[8]="Check in on {date} is not available for this offer.";
+index_alert[9]="You need to check the dates you wish to stay before you book.\r\nYou can also scroll forward or back to select more dates.";
+
+var error_alert = new Array();
+error_alert[0]="The rooms you were trying to book are no longer available.";
+error_alert[1]="Please...";
+error_alert[2]="Try another room type at this hotel";
+error_alert[3]="Reduce the number of rooms for this booking";
+error_alert[4]="Start your search again";
+
+var receipt_wording = new Array();
+receipt_wording[0]="We&#039;ve included your special discount\n You save {totalDiscount} {currencyCode}";
+
+var promocode_alert = new Array();
+promocode_alert[0] = "To apply a discount, please enter your promotion code.";
+promocode_alert[1] = "Congratulation you got {PromotionName} promotion.";
+promocode_alert[2] = "Sorry, but that code has expired.";
+promocode_alert[3] = "Woops! Sorry, but that code does not apply to this offer. Please check that this is actually the room you want to book.";
+promocode_alert[4] = "Sorry, that is not a valid code. Please check the details and try again.";
+promocode_alert[5] = "{PromotionName} ({discountTXT}), you save : {discountValue}.";
+promocode_alert[6] = "Congratulations! Your credit card qualifies for a promotional {discountTXT} discount ({PromotionName} - save {discountValue}) but we see that you&#039;ve also got a promo code.";
+promocode_alert["voucherValueGreaterThanDeposit"] = "Please note, you can only use this voucher once. Are you sure you want to use this voucher for the {Amount} {CurrencyCode} payment?";
+
+var popular_destinations = new Array();
+popular_destinations[0] = "Popular destinations";
+popular_destinations[1] = "Destination by name";
+
+var promocode_wording = new Array();
+promocode_wording[0] = "Use New Promotion (Save {discountValue})";
+promocode_wording[1] = "Keep Existing Promotion (Save {discountValue})";
+promocode_wording[2] = "Close";
+promocode_wording[3] = "Congratulations! Your credit card qualifies for a promotional {discountTXT} discount ({PromotionName} - save {discountValue})";
+promocode_wording[4] = "Your credit card number has qualified you to receive an extra {discountTXT} discount on top of the advertised rate!";
+
+var you_are_booking_wording = "{NoOfRoom} {RoomName}";
